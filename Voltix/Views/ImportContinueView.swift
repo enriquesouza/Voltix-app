@@ -11,7 +11,11 @@ struct ImportContinueView: View {
     var body: some View {
         VStack() {
             HeaderView(
-                rightIcon: "QuestionMark", leftIcon: "chevron.left", head: "IMPORT", leftAction: {}, rightAction: {}
+                rightIcon: "QuestionMark", 
+                leftIcon: "BackArrow", 
+                head: "IMPORT", 
+                leftAction: {}, 
+                rightAction: {}
             )
             VStack {
                HStack {

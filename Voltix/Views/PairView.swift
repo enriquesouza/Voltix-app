@@ -12,7 +12,7 @@ struct PairView: View {
         VStack {
           HeaderView(
             rightIcon: "QuestionMark",
-            leftIcon: "chevron.left",
+            leftIcon: "BackArrow",
             head: "PAIR",
             leftAction: {},
             rightAction: {}

@@ -12,8 +12,8 @@ struct MenuView: View {
         VStack() {
           HeaderView(
             rightIcon: "QuestionMark",
-            leftIcon: "chevron.left",
-            head: "Menu",
+            leftIcon: "BackArrow",
+            head: "MENU",
             leftAction: {},
             rightAction: {}
           )

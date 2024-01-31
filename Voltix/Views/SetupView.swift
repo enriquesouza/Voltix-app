@@ -12,7 +12,7 @@ struct SetupView: View {
         VStack() {
             HeaderView(
               rightIcon: "QuestionMark",
-              leftIcon: "chevron.left",
+              leftIcon: "BackArrow",
               head: "SETUP",
               leftAction: {},
               rightAction: {}

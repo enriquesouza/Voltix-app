@@ -19,7 +19,7 @@ struct HeaderView: View {
         ZStack(alignment: .center) {
             HStack() {
                 Button(action: leftAction) {
-                    Image(systemName: leftIcon)
+                    Image(leftIcon)
                         .resizable()
                         .frame(width: 18, height: 30)
                 }
@@ -45,7 +45,12 @@ struct HeaderView: View {
 
 struct HeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        HeaderView(rightIcon: "QuestionMark", leftIcon: "chevron.left", head: "START", leftAction: {}, rightAction: {}
+        HeaderView(
+            rightIcon: "QuestionMark", 
+            leftIcon: "BackArrow", 
+            head: "START", 
+            leftAction: {}, 
+            rightAction: {}
         )
     }
 }

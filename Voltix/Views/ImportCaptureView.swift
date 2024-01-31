@@ -11,7 +11,11 @@ struct ImportCaptureView: View {
     var body: some View {
         VStack() {
             HeaderView(
-                rightIcon: "QuestionMark", leftIcon: "chevron.left", head: "IMPORT", leftAction: {}, rightAction: {}
+                rightIcon: "QuestionMark", 
+                leftIcon: "BackArrow", 
+                head: "IMPORT", 
+                leftAction: {}, 
+                rightAction: {}
             )
             VStack {
                 Image("Capture")
@@ -27,7 +31,13 @@ struct ImportCaptureView: View {
             )
             .background(Color(red: 0.12, green: 0.12, blue: 0.12))
         }
-        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .top)
+        .frame(
+            minWidth: 0, 
+            maxWidth: .infinity, 
+            minHeight: 0, 
+            maxHeight: .infinity, 
+            alignment: .top
+        )
     }
 }
 
