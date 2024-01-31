@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		043F226B2B69CD0D00E9B2D1 /* VoltixApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043F226A2B69CD0D00E9B2D1 /* VoltixApp.swift */; };
+		043F226D2B69CD0D00E9B2D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043F226C2B69CD0D00E9B2D1 /* ContentView.swift */; };
+		043F226F2B69CD1100E9B2D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 043F226E2B69CD1100E9B2D1 /* Assets.xcassets */; };
+		043F22722B69CD1100E9B2D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 043F22712B69CD1100E9B2D1 /* Preview Assets.xcassets */; };
+		043F227C2B69CD1100E9B2D1 /* VoltixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043F227B2B69CD1100E9B2D1 /* VoltixTests.swift */; };
+		043F22862B69CD1100E9B2D1 /* VoltixUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043F22852B69CD1100E9B2D1 /* VoltixUITests.swift */; };
+		043F22882B69CD1100E9B2D1 /* VoltixUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043F22872B69CD1100E9B2D1 /* VoltixUITestsLaunchTests.swift */; };
+		043F22992B69CE0D00E9B2D1 /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043F22982B69CE0D00E9B2D1 /* Logo.swift */; };
+		043F229B2B69D73E00E9B2D1 /*  StartVoltixView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043F229A2B69D73E00E9B2D1 /*  StartVoltixView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		043F22782B69CD1100E9B2D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 043F225F2B69CD0D00E9B2D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 043F22662B69CD0D00E9B2D1;
+			remoteInfo = Voltix;
+		};
+		043F22822B69CD1100E9B2D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 043F225F2B69CD0D00E9B2D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 043F22662B69CD0D00E9B2D1;
+			remoteInfo = Voltix;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		043F22672B69CD0D00E9B2D1 /* Voltix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Voltix.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		043F226A2B69CD0D00E9B2D1 /* VoltixApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoltixApp.swift; sourceTree = "<group>"; };
+		043F226C2B69CD0D00E9B2D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		043F226E2B69CD1100E9B2D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		043F22712B69CD1100E9B2D1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		043F22772B69CD1100E9B2D1 /* VoltixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoltixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		043F227B2B69CD1100E9B2D1 /* VoltixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoltixTests.swift; sourceTree = "<group>"; };
+		043F22812B69CD1100E9B2D1 /* VoltixUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoltixUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		043F22852B69CD1100E9B2D1 /* VoltixUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoltixUITests.swift; sourceTree = "<group>"; };
+		043F22872B69CD1100E9B2D1 /* VoltixUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoltixUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		043F22982B69CE0D00E9B2D1 /* Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
+		043F229A2B69D73E00E9B2D1 /*  StartVoltixView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " StartVoltixView.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		043F22642B69CD0D00E9B2D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		043F22742B69CD1100E9B2D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		043F227E2B69CD1100E9B2D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		043F225E2B69CD0D00E9B2D1 = {
+			isa = PBXGroup;
+			children = (
+				043F22692B69CD0D00E9B2D1 /* Voltix */,
+				043F227A2B69CD1100E9B2D1 /* VoltixTests */,
+				043F22842B69CD1100E9B2D1 /* VoltixUITests */,
+				043F22682B69CD0D00E9B2D1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		043F22682B69CD0D00E9B2D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				043F22672B69CD0D00E9B2D1 /* Voltix.app */,
+				043F22772B69CD1100E9B2D1 /* VoltixTests.xctest */,
+				043F22812B69CD1100E9B2D1 /* VoltixUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		043F22692B69CD0D00E9B2D1 /* Voltix */ = {
+			isa = PBXGroup;
+			children = (
+				043F22952B69CD3E00E9B2D1 /* Views */,
+				043F22942B69CD2300E9B2D1 /* Components */,
+				043F226A2B69CD0D00E9B2D1 /* VoltixApp.swift */,
+				043F226C2B69CD0D00E9B2D1 /* ContentView.swift */,
+				043F226E2B69CD1100E9B2D1 /* Assets.xcassets */,
+				043F22702B69CD1100E9B2D1 /* Preview Content */,
+			);
+			path = Voltix;
+			sourceTree = "<group>";
+		};
+		043F22702B69CD1100E9B2D1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				043F22712B69CD1100E9B2D1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		043F227A2B69CD1100E9B2D1 /* VoltixTests */ = {
+			isa = PBXGroup;
+			children = (
+				043F227B2B69CD1100E9B2D1 /* VoltixTests.swift */,
+			);
+			path = VoltixTests;
+			sourceTree = "<group>";
+		};
+		043F22842B69CD1100E9B2D1 /* VoltixUITests */ = {
+			isa = PBXGroup;
+			children = (
+				043F22852B69CD1100E9B2D1 /* VoltixUITests.swift */,
+				043F22872B69CD1100E9B2D1 /* VoltixUITestsLaunchTests.swift */,
+			);
+			path = VoltixUITests;
+			sourceTree = "<group>";
+		};
+		043F22942B69CD2300E9B2D1 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				043F22982B69CE0D00E9B2D1 /* Logo.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		043F22952B69CD3E00E9B2D1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				043F229A2B69D73E00E9B2D1 /*  StartVoltixView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		043F22662B69CD0D00E9B2D1 /* Voltix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 043F228B2B69CD1100E9B2D1 /* Build configuration list for PBXNativeTarget "Voltix" */;
+			buildPhases = (
+				043F22632B69CD0D00E9B2D1 /* Sources */,
+				043F22642B69CD0D00E9B2D1 /* Frameworks */,
+				043F22652B69CD0D00E9B2D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Voltix;
+			productName = Voltix;
+			productReference = 043F22672B69CD0D00E9B2D1 /* Voltix.app */;
+			productType = "com.apple.product-type.application";
+		};
+		043F22762B69CD1100E9B2D1 /* VoltixTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 043F228E2B69CD1100E9B2D1 /* Build configuration list for PBXNativeTarget "VoltixTests" */;
+			buildPhases = (
+				043F22732B69CD1100E9B2D1 /* Sources */,
+				043F22742B69CD1100E9B2D1 /* Frameworks */,
+				043F22752B69CD1100E9B2D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				043F22792B69CD1100E9B2D1 /* PBXTargetDependency */,
+			);
+			name = VoltixTests;
+			productName = VoltixTests;
+			productReference = 043F22772B69CD1100E9B2D1 /* VoltixTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		043F22802B69CD1100E9B2D1 /* VoltixUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 043F22912B69CD1100E9B2D1 /* Build configuration list for PBXNativeTarget "VoltixUITests" */;
+			buildPhases = (
+				043F227D2B69CD1100E9B2D1 /* Sources */,
+				043F227E2B69CD1100E9B2D1 /* Frameworks */,
+				043F227F2B69CD1100E9B2D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				043F22832B69CD1100E9B2D1 /* PBXTargetDependency */,
+			);
+			name = VoltixUITests;
+			productName = VoltixUITests;
+			productReference = 043F22812B69CD1100E9B2D1 /* VoltixUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		043F225F2B69CD0D00E9B2D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					043F22662B69CD0D00E9B2D1 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					043F22762B69CD1100E9B2D1 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 043F22662B69CD0D00E9B2D1;
+					};
+					043F22802B69CD1100E9B2D1 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 043F22662B69CD0D00E9B2D1;
+					};
+				};
+			};
+			buildConfigurationList = 043F22622B69CD0D00E9B2D1 /* Build configuration list for PBXProject "Voltix" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 043F225E2B69CD0D00E9B2D1;
+			productRefGroup = 043F22682B69CD0D00E9B2D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				043F22662B69CD0D00E9B2D1 /* Voltix */,
+				043F22762B69CD1100E9B2D1 /* VoltixTests */,
+				043F22802B69CD1100E9B2D1 /* VoltixUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		043F22652B69CD0D00E9B2D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				043F22722B69CD1100E9B2D1 /* Preview Assets.xcassets in Resources */,
+				043F226F2B69CD1100E9B2D1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		043F22752B69CD1100E9B2D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		043F227F2B69CD1100E9B2D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		043F22632B69CD0D00E9B2D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				043F229B2B69D73E00E9B2D1 /*  StartVoltixView.swift in Sources */,
+				043F226D2B69CD0D00E9B2D1 /* ContentView.swift in Sources */,
+				043F22992B69CE0D00E9B2D1 /* Logo.swift in Sources */,
+				043F226B2B69CD0D00E9B2D1 /* VoltixApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		043F22732B69CD1100E9B2D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				043F227C2B69CD1100E9B2D1 /* VoltixTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		043F227D2B69CD1100E9B2D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				043F22882B69CD1100E9B2D1 /* VoltixUITestsLaunchTests.swift in Sources */,
+				043F22862B69CD1100E9B2D1 /* VoltixUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		043F22792B69CD1100E9B2D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 043F22662B69CD0D00E9B2D1 /* Voltix */;
+			targetProxy = 043F22782B69CD1100E9B2D1 /* PBXContainerItemProxy */;
+		};
+		043F22832B69CD1100E9B2D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 043F22662B69CD0D00E9B2D1 /* Voltix */;
+			targetProxy = 043F22822B69CD1100E9B2D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		043F22892B69CD1100E9B2D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		043F228A2B69CD1100E9B2D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		043F228C2B69CD1100E9B2D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Voltix/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Voltix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		043F228D2B69CD1100E9B2D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Voltix/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Voltix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		043F228F2B69CD1100E9B2D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.VoltixTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Voltix.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Voltix";
+			};
+			name = Debug;
+		};
+		043F22902B69CD1100E9B2D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.VoltixTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Voltix.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Voltix";
+			};
+			name = Release;
+		};
+		043F22922B69CD1100E9B2D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.VoltixUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Voltix;
+			};
+			name = Debug;
+		};
+		043F22932B69CD1100E9B2D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.VoltixUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Voltix;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		043F22622B69CD0D00E9B2D1 /* Build configuration list for PBXProject "Voltix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				043F22892B69CD1100E9B2D1 /* Debug */,
+				043F228A2B69CD1100E9B2D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		043F228B2B69CD1100E9B2D1 /* Build configuration list for PBXNativeTarget "Voltix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				043F228C2B69CD1100E9B2D1 /* Debug */,
+				043F228D2B69CD1100E9B2D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		043F228E2B69CD1100E9B2D1 /* Build configuration list for PBXNativeTarget "VoltixTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				043F228F2B69CD1100E9B2D1 /* Debug */,
+				043F22902B69CD1100E9B2D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		043F22912B69CD1100E9B2D1 /* Build configuration list for PBXNativeTarget "VoltixUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				043F22922B69CD1100E9B2D1 /* Debug */,
+				043F22932B69CD1100E9B2D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 043F225F2B69CD0D00E9B2D1 /* Project object */;
+}
