@@ -57,25 +57,8 @@ struct StartVoltixView: View {
             .frame(width: 430, height: 256)
             .offset(x: 0, y: 19)
             Spacer()
-            HStack() {
-                Spacer()
-                Button(action: {
-                    
-                }) {
-                  HStack() {
-                    Text("START")
-                      .lineSpacing(60)
-                      .font(Font.custom("Menlo", size: 40).weight(.black))
-                      .foregroundColor(.black)
-                    Image(systemName: "chevron.right")
-                      .resizable()
-                      .foregroundColor(.black)
-                      .frame(width: 20, height: 30)
-                    }
-                }
-            }
-            .frame(width: .infinity, height: 70)
-        }
+            BottomBar(content: "START", onClick: {})
+        } 
         .frame(minWidth:0, maxWidth:.infinity, minHeight:0, maxHeight:.infinity, alignment: .top)
             .background(.white);
     }
