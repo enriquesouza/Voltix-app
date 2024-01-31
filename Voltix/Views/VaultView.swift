@@ -12,8 +12,8 @@ struct VaultView: View {
         VStack(alignment: .leading) {
           HeaderView(
             rightIcon: "Refresh",
-            leftIcon: "chevron.left",
-            head: "Menu",
+            leftIcon: "Menu",
+            head: "VAULT",
             leftAction: {},
             rightAction: {}
           )
@@ -24,7 +24,8 @@ struct VaultView: View {
             numberofAssets: "3",
             coinAmount: "65,899",
             address: "bc1psrjtwm7682v6nhx2uwfgcfelrennd7pcvqq7v6w",
-            isRadio: true
+            isRadio: true,
+            radioIcon: "largecircle.fill.circle"
           )
           VaultItem(
             coinName: "Ethereum",
@@ -33,7 +34,8 @@ struct VaultView: View {
             numberofAssets: "3",
             coinAmount: "65,899",
             address: "0x0cb1D4a24292bB89862f599Ac5B10F42b6DE07e4",
-            isRadio: false
+            isRadio: false,
+            radioIcon: "largecircle.fill.circle"
           )
           VaultItem(
             coinName: "Solana",
@@ -42,7 +44,8 @@ struct VaultView: View {
             numberofAssets: "3",
             coinAmount: "65,899",
             address: "ELPecyZbKieSzNUnAGPZma6q7r8DYa7vFapDto7K1GMJ",
-            isRadio: false
+            isRadio: false,
+            radioIcon: "largecircle.fill.circle"
           )
           VaultItem(
             coinName: "THORChain",
@@ -51,7 +54,8 @@ struct VaultView: View {
             numberofAssets: "3",
             coinAmount: "65,899",
             address: "thor1cfelrennd7pcvqq7v6w7682v6nhx2uwfg",
-            isRadio: true
+            isRadio: true,
+            radioIcon: "largecircle.fill.circle"
           )
           Choose(content: "CHAINS")
         }

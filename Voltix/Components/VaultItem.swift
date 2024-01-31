@@ -15,6 +15,8 @@ struct VaultItem: View {
     let coinAmount: String;
     let address: String;
     let isRadio: Bool;
+    let radioIcon: String;
+    
     var body: some View {
         VStack(alignment: .leading) {
             HStack() {
@@ -44,7 +46,7 @@ struct VaultItem: View {
                     .foregroundColor(.black);
                 Spacer()
                 if isRadio {
-                    Image(systemName: "largecircle.fill.circle")
+                    Image(systemName: radioIcon)
                         .renderingMode(.original)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
@@ -66,6 +68,7 @@ struct VaultItem: View {
             numberofAssets: "3",
             coinAmount: "65899",
             address: "thor1cfelrennd7pcvqq7v6w7682v6nhx2uwfg",
-            isRadio: false
+            isRadio: false,
+            radioIcon: "largecircle.fill.circle"
     )
 }
