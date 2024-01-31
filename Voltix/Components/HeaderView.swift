@@ -21,7 +21,7 @@ struct HeaderView: View {
                 Button(action: leftAction) {
                     Image(leftIcon)
                         .resizable()
-                        .frame(width: 18, height: 30)
+                        .frame(width: 30, height: 30)
                 }
                 .foregroundColor(.black)
                 Spacer()
