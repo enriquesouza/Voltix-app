@@ -26,7 +26,7 @@ struct HeaderView: View {
                 .foregroundColor(.black)
                 Spacer()
                 Button(action: rightAction) {
-                    Image(systemName: rightIcon)
+                    Image(rightIcon)
                         .resizable()
                         .frame(width: 30, height: 30)
                 }
@@ -45,7 +45,7 @@ struct HeaderView: View {
 
 struct HeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        HeaderView(rightIcon: "questionmark.circle", leftIcon: "chevron.left", head: "START", leftAction: {}, rightAction: {}
+        HeaderView(rightIcon: "QuestionMark", leftIcon: "chevron.left", head: "START", leftAction: {}, rightAction: {}
         )
     }
 }

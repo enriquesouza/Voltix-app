@@ -11,7 +11,7 @@ struct StartView: View {
     var body: some View {
         VStack() {
             HeaderView(
-                rightIcon: "questionmark.circle", 
+                rightIcon: "QuestionMark", 
                 leftIcon: "chevron.left", 
                 head: "START", 
                 leftAction: {}, 

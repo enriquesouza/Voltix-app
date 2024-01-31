@@ -11,7 +11,7 @@ struct ImportCaptureView: View {
     var body: some View {
         VStack() {
             HeaderView(
-                rightIcon: "questionmark.circle", leftIcon: "chevron.left", head: "IMPORT", leftAction: {}, rightAction: {}
+                rightIcon: "QuestionMark", leftIcon: "chevron.left", head: "IMPORT", leftAction: {}, rightAction: {}
             )
             VStack {
                 Image("Capture")

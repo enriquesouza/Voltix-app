@@ -11,7 +11,7 @@ struct DoneView: View {
     var body: some View {
         VStack(alignment: .leading) {
           HeaderView(
-            rightIcon: "questionmark.circle",
+            rightIcon: "QuestionMark",
             leftIcon: "",
             head: "DONE",
             leftAction: {},
