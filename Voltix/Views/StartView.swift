@@ -11,7 +11,11 @@ struct StartView: View {
     var body: some View {
         VStack() {
             HeaderView(
-                rightIcon: "questionmark.circle", leftIcon: "chevron.left", head: "START", leftAction: {}, rightAction: {}
+                rightIcon: "questionmark.circle", 
+                leftIcon: "chevron.left", 
+                head: "START", 
+                leftAction: {}, 
+                rightAction: {}
             )
             Spacer()
             VStack() {
@@ -34,7 +38,13 @@ struct StartView: View {
             .frame(width: .infinity, height: .infinity)
             Spacer()
         }
-        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .top)
+        .frame(
+            minWidth: 0, 
+            maxWidth: .infinity, 
+            minHeight: 0, 
+            maxHeight: .infinity, 
+            alignment: .top
+        )
     }
 }
 

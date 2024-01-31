@@ -59,8 +59,14 @@ struct StartVoltixView: View {
             Spacer()
             BottomBar(content: "START", onClick: {})
         } 
-        .frame(minWidth:0, maxWidth:.infinity, minHeight:0, maxHeight:.infinity, alignment: .top)
-            .background(.white);
+        .frame(
+          minWidth:0, 
+          maxWidth:.infinity, 
+          minHeight:0, 
+          maxHeight:.infinity, 
+          alignment: .top
+        )
+        .background(.white);
     }
 }
 
