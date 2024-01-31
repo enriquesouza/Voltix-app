@@ -42,13 +42,13 @@ struct PairView: View {
               Text("Keep devices on same WiFi Network with VOLTIX open")
               .font(Font.custom("Montserrat", size: 24).weight(.medium))
               .lineLimit(nil)
-              .fixedSize(horizontal: false, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
+              .fixedSize(horizontal: false, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)  
               .lineSpacing(5)
               .foregroundColor(.black)
           }
           .padding(EdgeInsets(top: 0, leading: 25, bottom: 0, trailing: 0))
           .frame(width: 430, height: 71);
-          Spacer().frame(height: 100)
+          Spacer().frame(height: 70 )
         }
         .frame(
             minWidth: 0,

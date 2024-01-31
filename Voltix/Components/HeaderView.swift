@@ -37,7 +37,7 @@ struct HeaderView: View {
                 .foregroundColor(.black)
         }
         .padding()
-        .frame(width: .infinity, height: 130);
+        .frame(width: .infinity, height: 119);
     }
 }
 
