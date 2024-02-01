@@ -19,7 +19,6 @@
 		04C2612B2B6A31E700D0E5C7 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C2612A2B6A31E700D0E5C7 /* HeaderView.swift */; };
 		04C2612D2B6A3E5200D0E5C7 /* LargeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C2612C2B6A3E5200D0E5C7 /* LargeButton.swift */; };
 		04C2612F2B6A3F8A00D0E5C7 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C2612E2B6A3F8A00D0E5C7 /* StartView.swift */; };
-		04C261312B6A43C900D0E5C7 /* ImortCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C261302B6A43C900D0E5C7 /* ImortCaptureView.swift */; };
 		04C261332B6A46BF00D0E5C7 /* BottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C261322B6A46BF00D0E5C7 /* BottomBar.swift */; };
 		04C261352B6A496E00D0E5C7 /* ImportContinueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C261342B6A496E00D0E5C7 /* ImportContinueView.swift */; };
 		04C261372B6A4C4700D0E5C7 /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C261362B6A4C4700D0E5C7 /* SetupView.swift */; };
@@ -46,12 +45,6 @@
 		04C261672B6B351E00D0E5C7 /* SwapDoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C261662B6B351E00D0E5C7 /* SwapDoneView.swift */; };
 		04C261692B6B4D6400D0E5C7 /* SwapPairView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C261682B6B4D6400D0E5C7 /* SwapPairView.swift */; };
 		04C2616B2B6B873300D0E5C7 /* SwapDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C2616A2B6B873300D0E5C7 /* SwapDetailView.swift */; };
-		04C261702B6B92A900D0E5C7 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04C2616E2B6B92A900D0E5C7 /* Montserrat-Regular.ttf */; };
-		04C261712B6B92A900D0E5C7 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04C2616E2B6B92A900D0E5C7 /* Montserrat-Regular.ttf */; };
-		04C261722B6B92A900D0E5C7 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04C2616E2B6B92A900D0E5C7 /* Montserrat-Regular.ttf */; };
-		04C261732B6B92A900D0E5C7 /* Menlo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04C2616F2B6B92A900D0E5C7 /* Menlo-Regular.ttf */; };
-		04C261742B6B92A900D0E5C7 /* Menlo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04C2616F2B6B92A900D0E5C7 /* Menlo-Regular.ttf */; };
-		04C261752B6B92A900D0E5C7 /* Menlo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04C2616F2B6B92A900D0E5C7 /* Menlo-Regular.ttf */; };
 		04C2617E2B6B94C600D0E5C7 /* Montserrat.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04C2617C2B6B94C600D0E5C7 /* Montserrat.ttf */; };
 		04C2617F2B6B94C600D0E5C7 /* Menlo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04C2617D2B6B94C600D0E5C7 /* Menlo.ttf */; };
 /* End PBXBuildFile section */
@@ -89,7 +82,6 @@
 		04C2612A2B6A31E700D0E5C7 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		04C2612C2B6A3E5200D0E5C7 /* LargeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeButton.swift; sourceTree = "<group>"; };
 		04C2612E2B6A3F8A00D0E5C7 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
-		04C261302B6A43C900D0E5C7 /* ImortCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImortCaptureView.swift; sourceTree = "<group>"; };
 		04C261322B6A46BF00D0E5C7 /* BottomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBar.swift; sourceTree = "<group>"; };
 		04C261342B6A496E00D0E5C7 /* ImportContinueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportContinueView.swift; sourceTree = "<group>"; };
 		04C261362B6A4C4700D0E5C7 /* SetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
@@ -116,8 +108,6 @@
 		04C261662B6B351E00D0E5C7 /* SwapDoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapDoneView.swift; sourceTree = "<group>"; };
 		04C261682B6B4D6400D0E5C7 /* SwapPairView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapPairView.swift; sourceTree = "<group>"; };
 		04C2616A2B6B873300D0E5C7 /* SwapDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapDetailView.swift; sourceTree = "<group>"; };
-		04C2616E2B6B92A900D0E5C7 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
-		04C2616F2B6B92A900D0E5C7 /* Menlo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Menlo-Regular.ttf"; sourceTree = "<group>"; };
 		04C2617B2B6B93CC00D0E5C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		04C2617C2B6B94C600D0E5C7 /* Montserrat.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Montserrat.ttf; sourceTree = "<group>"; };
 		04C2617D2B6B94C600D0E5C7 /* Menlo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Menlo.ttf; sourceTree = "<group>"; };
@@ -211,8 +201,6 @@
 		043F22942B69CD2300E9B2D1 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				04C2616F2B6B92A900D0E5C7 /* Menlo-Regular.ttf */,
-				04C2616E2B6B92A900D0E5C7 /* Montserrat-Regular.ttf */,
 				04C261462B6AC18300D0E5C7 /* MenuItem.swift */,
 				04C261382B6A53AE00D0E5C7 /* DeviceView.swift */,
 				043F22982B69CE0D00E9B2D1 /* Logo.swift */,
@@ -234,7 +222,6 @@
 			isa = PBXGroup;
 			children = (
 				043F229A2B69D73E00E9B2D1 /*  StartVoltixView.swift */,
-				04C261302B6A43C900D0E5C7 /* ImortCaptureView.swift */,
 				04C2612E2B6A3F8A00D0E5C7 /* StartView.swift */,
 				04C261342B6A496E00D0E5C7 /* ImportContinueView.swift */,
 				04C261362B6A4C4700D0E5C7 /* SetupView.swift */,
@@ -370,11 +357,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				04C2617F2B6B94C600D0E5C7 /* Menlo.ttf in Resources */,
-				04C261702B6B92A900D0E5C7 /* Montserrat-Regular.ttf in Resources */,
 				043F22722B69CD1100E9B2D1 /* Preview Assets.xcassets in Resources */,
 				04C2617E2B6B94C600D0E5C7 /* Montserrat.ttf in Resources */,
 				043F226F2B69CD1100E9B2D1 /* Assets.xcassets in Resources */,
-				04C261732B6B92A900D0E5C7 /* Menlo-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,8 +367,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04C261712B6B92A900D0E5C7 /* Montserrat-Regular.ttf in Resources */,
-				04C261742B6B92A900D0E5C7 /* Menlo-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,8 +374,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04C261722B6B92A900D0E5C7 /* Montserrat-Regular.ttf in Resources */,
-				04C261752B6B92A900D0E5C7 /* Menlo-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,7 +404,6 @@
 				043F226D2B69CD0D00E9B2D1 /* ContentView.swift in Sources */,
 				04C261572B6B05B700D0E5C7 /* NetworksView.swift in Sources */,
 				04C261372B6A4C4700D0E5C7 /* SetupView.swift in Sources */,
-				04C261312B6A43C900D0E5C7 /* ImortCaptureView.swift in Sources */,
 				04C2615B2B6B17C100D0E5C7 /* SendCheckView.swift in Sources */,
 				043F22992B69CE0D00E9B2D1 /* Logo.swift in Sources */,
 				04C261532B6AD70F00D0E5C7 /* VaultItem.swift in Sources */,

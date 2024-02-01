@@ -21,26 +21,26 @@ struct SetupView: View {
               .font(Font.custom("Montserrat", size: 24).weight(.medium))
               .lineSpacing(36)
               .foregroundColor(.black);
-            DeviceView(
-                number: "1",
-                description: "MAIN",
-                deviceImg: "Device1",
-                deviceDescription: "A MACBOOK"
-            )
-            Spacer()
-            DeviceView(
-                number: "2",
-                description: "PAIR",
-                deviceImg: "Device2",
-                deviceDescription: "ANY"
-            )
-            Spacer()
-            DeviceView(
-                number: "3",
-                description: "PAIR",
-                deviceImg: "Device3",
-                deviceDescription: "ANY"
-            )
+            // DeviceView(
+            //     number: "1",
+            //     description: "MAIN",
+            //     deviceImg: "Device1",
+            //     deviceDescription: "A MACBOOK"
+            // )
+            // Spacer()
+            // DeviceView(
+            //     number: "2",
+            //     description: "PAIR",
+            //     deviceImg: "Device2",
+            //     deviceDescription: "ANY"
+            // )
+            // Spacer()
+            // DeviceView(
+            //     number: "3",
+            //     description: "PAIR",
+            //     deviceImg: "Device3",
+            //     deviceDescription: "ANY"
+            // )
             WifiBar()
             BottomBar(content: "CONTINUE", onClick: { })
         }
