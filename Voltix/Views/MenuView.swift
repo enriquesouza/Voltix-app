@@ -41,7 +41,7 @@ struct MenuView: View {
             .background(Color(red: 0.92, green: 0.92, blue: 0.93))
             .cornerRadius(10);
           }
-        Spacer().frame(height: 30)
+          Spacer().frame(height: 30)
           MenuItem(content: "ADD VAULT")
           MenuItem(content: "EXPORT VAULT")
           MenuItem(content: "FORGET VAULT")
