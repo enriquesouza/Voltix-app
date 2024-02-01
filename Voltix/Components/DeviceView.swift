@@ -23,76 +23,59 @@ struct DeviceItemView: View {
         .padding()
     }
 }
+import SwiftUI
 
-// Define the main DeviceView struct
 struct DeviceView: View {
     var body: some View {
-        VStack {
-            HeaderView(
-                rightIcon: "QuestionMark",
-                leftIcon: "BackArrow",
-                head: "SETUP",
-                leftAction: {
-                    // Define action for left button
-                },
-                rightAction: {
-                    // Define action for right button
-                }
-            )
-            Text("YOU NEED THREE DEVICES.")
-                .font(Font.custom("Montserrat", size: 24).weight(.medium))
-                .lineSpacing(36)
-                .foregroundColor(.black)
-            DeviceItemView(
-                number: "1",
-                descriptionText: "MAIN",
-                deviceImg: "Device1",
-                deviceDescription: "A MACBOOK"
-            )
-            Spacer()
-            DeviceItemView(
-                number: "2",
-                descriptionText: "PAIR",
-                deviceImg: "Device2",
-                deviceDescription: "ANY"
-            )
-            Spacer()
-            DeviceItemView(
-                number: "3",
-                descriptionText: "PAIR",
-                deviceImg: "Device3",
-                deviceDescription: "ANY"
-            )
-            HStack(spacing: 25) {
-                Image("Wifi")
-                    .resizable()
-                    .frame(width: 36, height: 29)
-                Text("Keep devices on same WiFi Network with VOLTIX open")
+        ScrollView { // Wrap the content in a ScrollView
+            VStack {
+                HeaderView(
+                    rightIcon: "QuestionMark",
+                    leftIcon: "BackArrow",
+                    head: "SETUP",
+                    leftAction: {
+                        // Define action for left button
+                    },
+                    rightAction: {
+                        // Define action for right button
+                    }
+                )
+                Text("YOU NEED THREE DEVICES.")
                     .font(Font.custom("Montserrat", size: 24).weight(.medium))
-                    .lineLimit(nil)
-                    .fixedSize(horizontal: false, vertical: true)
-                    .lineSpacing(5)
+                    .lineSpacing(36)
                     .foregroundColor(.black)
+                DeviceItemView(
+                    number: "1",
+                    descriptionText: "MAIN",
+                    deviceImg: "Device1",
+                    deviceDescription: "A MACBOOK"
+                )
+                Spacer()
+                DeviceItemView(
+                    number: "2",
+                    descriptionText: "PAIR",
+                    deviceImg: "Device2",
+                    deviceDescription: "ANY"
+                )
+                Spacer()
+                DeviceItemView(
+                    number: "3",
+                    descriptionText: "PAIR",
+                    deviceImg: "Device3",
+                    deviceDescription: "ANY"
+                )
+                WifiBar()
+                BottomBar(content: "CONTINUE", onClick: {
+                    // Define action for bottom bar button
+                })
             }
-            .padding(EdgeInsets(top: 0, leading: 25, bottom: 0, trailing: 0))
-            .frame(width: 430, height: 71)
-            BottomBar(content: "CONTINUE", onClick: {
-                // Define action for bottom bar button
-            })
+            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .top)
         }
-        .frame(
-            minWidth: 0,
-            maxWidth: .infinity,
-            minHeight: 0,
-            maxHeight: .infinity,
-            alignment: .top
-        )
     }
 }
 
-// SwiftUI Preview Provider
-struct DeviceView_Previews: PreviewProvider {
-    static var previews: some View {
+// Preview
+#Preview {
         DeviceView()
-    }
 }
+
