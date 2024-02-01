@@ -31,12 +31,8 @@ struct SendDoneView: View {
                     Image("Link")
                         .resizable()
                         .frame(width: 23, height: 30)
-                    Spacer().frame(width: 8)
-                    Image(systemName: "largecircle.fill.circle")
-                        .resizable()
-                        .frame(width: 20, height: 20)
                 }
-                .padding(.trailing, 8)
+                .padding(.trailing, 16)
             }
             .frame(height: 83)
             Spacer()

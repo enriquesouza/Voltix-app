@@ -31,7 +31,7 @@ struct SwapPairView: View {
             .font(Font.custom("Montserrat", size: 80).weight(.light))
             .lineSpacing(120)
             .foregroundColor(.black)
-          Spacer()
+          Spacer() 
           WifiBar()
           Spacer().frame(height: 70 )
         }
