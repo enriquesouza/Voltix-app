@@ -8,28 +8,19 @@
 import SwiftUI
 
 struct LargeButton: View {
-    let content: String;
+    let content: String
+    
     var body: some View {
         Button(action: {
-
+            // Button action here
         }) {
-          VStack() {
             Text(content)
-              .font(Font.custom("Menlo", size: 40).weight(.bold))
-              .lineSpacing(60)
-              .foregroundColor(.black);
-          }
-          
+                .largeButtonStyle()
         }
-        .frame(width: 240, height: 148)
-        .cornerRadius(12)
-        .foregroundColor(.clear)
-        .background(Color(red: 0.96, green: 0.96, blue: 0.96))
+        .foregroundColor(.clear) // Ensure the button's intrinsic color doesn't interfere
     }
 }
 
-struct LargeButton_Preview: PreviewProvider {
-    static var previews: some View {
+#Preview {
         LargeButton(content: "NEW")
-    }
 }

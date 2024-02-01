@@ -47,6 +47,7 @@
 		04C2616B2B6B873300D0E5C7 /* SwapDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C2616A2B6B873300D0E5C7 /* SwapDetailView.swift */; };
 		04C2617E2B6B94C600D0E5C7 /* Montserrat.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04C2617C2B6B94C600D0E5C7 /* Montserrat.ttf */; };
 		04C2617F2B6B94C600D0E5C7 /* Menlo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04C2617D2B6B94C600D0E5C7 /* Menlo.ttf */; };
+		469E16D52B6C4CAF0079E9FF /* LargeButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469E16D42B6C4CAF0079E9FF /* LargeButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +112,7 @@
 		04C2617B2B6B93CC00D0E5C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		04C2617C2B6B94C600D0E5C7 /* Montserrat.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Montserrat.ttf; sourceTree = "<group>"; };
 		04C2617D2B6B94C600D0E5C7 /* Menlo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Menlo.ttf; sourceTree = "<group>"; };
+		469E16D42B6C4CAF0079E9FF /* LargeButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +203,7 @@
 		043F22942B69CD2300E9B2D1 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				469E16D32B6C4C7B0079E9FF /* styles */,
 				04C261462B6AC18300D0E5C7 /* MenuItem.swift */,
 				04C261382B6A53AE00D0E5C7 /* DeviceView.swift */,
 				043F22982B69CE0D00E9B2D1 /* Logo.swift */,
@@ -250,6 +253,14 @@
 				04C2617C2B6B94C600D0E5C7 /* Montserrat.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		469E16D32B6C4C7B0079E9FF /* styles */ = {
+			isa = PBXGroup;
+			children = (
+				469E16D42B6C4CAF0079E9FF /* LargeButtonStyle.swift */,
+			);
+			path = styles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -413,6 +424,7 @@
 				04C2613D2B6A758B00D0E5C7 /* DoneView.swift in Sources */,
 				04C2612D2B6A3E5200D0E5C7 /* LargeButton.swift in Sources */,
 				04C261352B6A496E00D0E5C7 /* ImportContinueView.swift in Sources */,
+				469E16D52B6C4CAF0079E9FF /* LargeButtonStyle.swift in Sources */,
 				04C2612F2B6A3F8A00D0E5C7 /* StartView.swift in Sources */,
 				04C261612B6B1F2F00D0E5C7 /* SendDoneView.swift in Sources */,
 				04C2616B2B6B873300D0E5C7 /* SwapDetailView.swift in Sources */,
