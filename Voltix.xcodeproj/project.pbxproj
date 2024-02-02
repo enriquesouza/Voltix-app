@@ -50,6 +50,7 @@
 		469E16D52B6C4CAF0079E9FF /* LargeButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469E16D42B6C4CAF0079E9FF /* LargeButtonStyle.swift */; };
 		46A525C32B6C6B8900C923E9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A525C22B6C6B8900C923E9 /* NetworkManager.swift */; };
 		46A525C52B6C70E800C923E9 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A525C42B6C70E800C923E9 /* Network.swift */; };
+		46A525C72B6C839100C923E9 /* ServiceStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A525C62B6C839100C923E9 /* ServiceStatusView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +118,7 @@
 		469E16D42B6C4CAF0079E9FF /* LargeButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeButtonStyle.swift; sourceTree = "<group>"; };
 		46A525C22B6C6B8900C923E9 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		46A525C42B6C70E800C923E9 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		46A525C62B6C839100C923E9 /* ServiceStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceStatusView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,6 +250,7 @@
 				04C261662B6B351E00D0E5C7 /* SwapDoneView.swift */,
 				04C261682B6B4D6400D0E5C7 /* SwapPairView.swift */,
 				04C2616A2B6B873300D0E5C7 /* SwapDetailView.swift */,
+				46A525C62B6C839100C923E9 /* ServiceStatusView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -415,6 +418,7 @@
 				04C2614F2B6AD26E00D0E5C7 /* VaultView.swift in Sources */,
 				04C2615D2B6B195900D0E5C7 /* WifiBar.swift in Sources */,
 				04C261412B6A762400D0E5C7 /* AddressItem.swift in Sources */,
+				46A525C72B6C839100C923E9 /* ServiceStatusView.swift in Sources */,
 				04C2613B2B6A6D4800D0E5C7 /* PairView.swift in Sources */,
 				04C261452B6AB73700D0E5C7 /* RadioButtonGroup.swift in Sources */,
 				04C2612B2B6A31E700D0E5C7 /* HeaderView.swift in Sources */,

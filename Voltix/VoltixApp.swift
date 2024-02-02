@@ -19,6 +19,7 @@ struct VoltixApp: App {
                                     networkManager.publishService()
                                     networkManager.startBrowsing()
                                 }
+            ServiceStatusView(networkManager: networkManager)
         }
     }
 }

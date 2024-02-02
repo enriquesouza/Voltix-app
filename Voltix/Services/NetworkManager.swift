@@ -7,19 +7,29 @@ class NetworkManager: NSObject, NetServiceBrowserDelegate, NetServiceDelegate, O
     var serviceBrowser: NetServiceBrowser?
     var netService: NetService?
     
-    let netServiceType: String = "_voltixWallet._tcp."
-    let netServiceDomain: String = "local."
+    @Published var deviceName = ""
+    @Published var netServiceType: String = "_voltixWallet._tcp."
+    @Published var netServiceDomain: String = "local."
+    @Published var netServicePort: Int32 = 65535
+    
+    // Add other NetServiceDelegate methods if necessary
+    @Published var discoveredServices: [NetService] = []
+    @Published var publishStatus: String = ""
+    @Published var isServicePublished: Bool = false
+    @Published var isBrowsing: Bool = false
+    @Published var lastError: String? = nil
     
     // Browse for services
     func startBrowsing() {
         serviceBrowser = NetServiceBrowser()
         serviceBrowser?.delegate = self
         serviceBrowser?.searchForServices(ofType: netServiceType, inDomain: netServiceDomain)
+        self.isBrowsing = true
     }
     
     // Publish a service, choose a port in the dynamic/private range (49152-65535) to minimize the risk of conflicts
     func publishService() {
-        var deviceName = ""
+        
 #if os(iOS)
         deviceName = UIDevice.current.name
 #endif
@@ -27,9 +37,11 @@ class NetworkManager: NSObject, NetServiceBrowserDelegate, NetServiceDelegate, O
         deviceName = Host.current().localizedName ?? "Unknown"
 #endif
         
-        netService = NetService(domain: netServiceDomain, type: netServiceType, name: deviceName, port: 65535)
+        netService = NetService(domain: netServiceDomain, type: netServiceType, name: deviceName, port: netServicePort)
         netService?.delegate = self
         netService?.publish()
+        
+        isServicePublished = true
     }
     
     // MARK: - NetServiceBrowserDelegate Methods
@@ -49,18 +61,12 @@ class NetworkManager: NSObject, NetServiceBrowserDelegate, NetServiceDelegate, O
     func netServiceDidPublish(_ sender: NetService) {
         DispatchQueue.main.async {
             self.publishStatus = "Service Published: \(sender.name)"
+            self.isServicePublished = true
+            self.lastError = nil
         }
     }
     
     func netService(_ sender: NetService, didNotPublish errorDict: [String : NSNumber]) {
         // Publishing failed
     }
-    
-    // Add other NetServiceDelegate methods if necessary
-    @Published var discoveredServices: [NetService] = []
-    @Published var publishStatus: String = ""
-    
-    
-    
-    
 }
