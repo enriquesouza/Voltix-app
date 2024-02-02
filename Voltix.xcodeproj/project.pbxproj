@@ -48,6 +48,8 @@
 		04C2617E2B6B94C600D0E5C7 /* Montserrat.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04C2617C2B6B94C600D0E5C7 /* Montserrat.ttf */; };
 		04C2617F2B6B94C600D0E5C7 /* Menlo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04C2617D2B6B94C600D0E5C7 /* Menlo.ttf */; };
 		469E16D52B6C4CAF0079E9FF /* LargeButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469E16D42B6C4CAF0079E9FF /* LargeButtonStyle.swift */; };
+		46A525C32B6C6B8900C923E9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A525C22B6C6B8900C923E9 /* NetworkManager.swift */; };
+		46A525C52B6C70E800C923E9 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A525C42B6C70E800C923E9 /* Network.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +115,8 @@
 		04C2617C2B6B94C600D0E5C7 /* Montserrat.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Montserrat.ttf; sourceTree = "<group>"; };
 		04C2617D2B6B94C600D0E5C7 /* Menlo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Menlo.ttf; sourceTree = "<group>"; };
 		469E16D42B6C4CAF0079E9FF /* LargeButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeButtonStyle.swift; sourceTree = "<group>"; };
+		46A525C22B6C6B8900C923E9 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		46A525C42B6C70E800C923E9 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +167,7 @@
 		043F22692B69CD0D00E9B2D1 /* Voltix */ = {
 			isa = PBXGroup;
 			children = (
+				46A525C12B6C6B6A00C923E9 /* Services */,
 				04C2617B2B6B93CC00D0E5C7 /* Info.plist */,
 				04C2617A2B6B935B00D0E5C7 /* Fonts */,
 				043F22952B69CD3E00E9B2D1 /* Views */,
@@ -217,6 +222,7 @@
 				04C261522B6AD70F00D0E5C7 /* VaultItem.swift */,
 				04C261582B6B06A600D0E5C7 /* NetItem.swift */,
 				04C2615C2B6B195900D0E5C7 /* WifiBar.swift */,
+				46A525C42B6C70E800C923E9 /* Network.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -261,6 +267,14 @@
 				469E16D42B6C4CAF0079E9FF /* LargeButtonStyle.swift */,
 			);
 			path = styles;
+			sourceTree = "<group>";
+		};
+		46A525C12B6C6B6A00C923E9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				46A525C22B6C6B8900C923E9 /* NetworkManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -409,9 +423,11 @@
 				043F229B2B69D73E00E9B2D1 /*  StartVoltixView.swift in Sources */,
 				04C261592B6B06A600D0E5C7 /* NetItem.swift in Sources */,
 				04C261392B6A53AE00D0E5C7 /* DeviceView.swift in Sources */,
+				46A525C52B6C70E800C923E9 /* Network.swift in Sources */,
 				04C261632B6B2AF900D0E5C7 /* SendDetailView.swift in Sources */,
 				04C261332B6A46BF00D0E5C7 /* BottomBar.swift in Sources */,
 				04C261552B6AEA8F00D0E5C7 /* TokensView.swift in Sources */,
+				46A525C32B6C6B8900C923E9 /* NetworkManager.swift in Sources */,
 				043F226D2B69CD0D00E9B2D1 /* ContentView.swift in Sources */,
 				04C261572B6B05B700D0E5C7 /* NetworksView.swift in Sources */,
 				04C261372B6A4C4700D0E5C7 /* SetupView.swift in Sources */,

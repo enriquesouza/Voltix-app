@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct VoltixApp: App {
+    @StateObject var networkManager = NetworkManager()
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(networkManager)
+                                .onAppear {
+                                    networkManager.publishService()
+                                    networkManager.startBrowsing()
+                                }
         }
     }
 }
