@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ServiceStatusView: View {
     @ObservedObject var networkManager: NetworkManager
-
+    
     var body: some View {
         VStack {
             Text("Device Name: \(networkManager.deviceName)")
@@ -22,7 +22,7 @@ struct ServiceStatusView: View {
                 Text("Service is not published.")
                     .foregroundColor(.red)
             }
-
+            
             if networkManager.isBrowsing {
                 Text("Browsing for services...")
                     .foregroundColor(.blue)
@@ -30,7 +30,7 @@ struct ServiceStatusView: View {
                 Text("Not browsing.")
                     .foregroundColor(.gray)
             }
-
+            
             if let lastError = networkManager.lastError {
                 Text("Last Error: \(lastError)")
                     .foregroundColor(.orange)

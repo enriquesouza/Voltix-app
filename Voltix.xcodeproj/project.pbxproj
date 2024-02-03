@@ -47,6 +47,10 @@
 		04C2616B2B6B873300D0E5C7 /* SwapDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C2616A2B6B873300D0E5C7 /* SwapDetailView.swift */; };
 		04C2617E2B6B94C600D0E5C7 /* Montserrat.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04C2617C2B6B94C600D0E5C7 /* Montserrat.ttf */; };
 		04C2617F2B6B94C600D0E5C7 /* Menlo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04C2617D2B6B94C600D0E5C7 /* Menlo.ttf */; };
+		46662D3D2B6E18E5004EF659 /* KeyChainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46662D3C2B6E18E5004EF659 /* KeyChainService.swift */; };
+		46662D3F2B6E1923004EF659 /* FileSystemService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46662D3E2B6E1923004EF659 /* FileSystemService.swift */; };
+		46662D412B6E1949004EF659 /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46662D402B6E1949004EF659 /* UserDefaultsService.swift */; };
+		46662D432B6E1C77004EF659 /* SaveToKeyChainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46662D422B6E1C77004EF659 /* SaveToKeyChainButton.swift */; };
 		469E16D52B6C4CAF0079E9FF /* LargeButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469E16D42B6C4CAF0079E9FF /* LargeButtonStyle.swift */; };
 		46A525C32B6C6B8900C923E9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A525C22B6C6B8900C923E9 /* NetworkManager.swift */; };
 		46A525C52B6C70E800C923E9 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A525C42B6C70E800C923E9 /* Network.swift */; };
@@ -115,6 +119,10 @@
 		04C2617B2B6B93CC00D0E5C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		04C2617C2B6B94C600D0E5C7 /* Montserrat.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Montserrat.ttf; sourceTree = "<group>"; };
 		04C2617D2B6B94C600D0E5C7 /* Menlo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Menlo.ttf; sourceTree = "<group>"; };
+		46662D3C2B6E18E5004EF659 /* KeyChainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainService.swift; sourceTree = "<group>"; };
+		46662D3E2B6E1923004EF659 /* FileSystemService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSystemService.swift; sourceTree = "<group>"; };
+		46662D402B6E1949004EF659 /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
+		46662D422B6E1C77004EF659 /* SaveToKeyChainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveToKeyChainButton.swift; sourceTree = "<group>"; };
 		469E16D42B6C4CAF0079E9FF /* LargeButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeButtonStyle.swift; sourceTree = "<group>"; };
 		46A525C22B6C6B8900C923E9 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		46A525C42B6C70E800C923E9 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
@@ -225,6 +233,7 @@
 				04C261582B6B06A600D0E5C7 /* NetItem.swift */,
 				04C2615C2B6B195900D0E5C7 /* WifiBar.swift */,
 				46A525C42B6C70E800C923E9 /* Network.swift */,
+				46662D422B6E1C77004EF659 /* SaveToKeyChainButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -276,6 +285,9 @@
 			isa = PBXGroup;
 			children = (
 				46A525C22B6C6B8900C923E9 /* NetworkManager.swift */,
+				46662D3C2B6E18E5004EF659 /* KeyChainService.swift */,
+				46662D3E2B6E1923004EF659 /* FileSystemService.swift */,
+				46662D402B6E1949004EF659 /* UserDefaultsService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -414,14 +426,17 @@
 			files = (
 				04C261472B6AC18300D0E5C7 /* MenuItem.swift in Sources */,
 				04C2615F2B6B1BB300D0E5C7 /* SendVerifyView.swift in Sources */,
+				46662D3F2B6E1923004EF659 /* FileSystemService.swift in Sources */,
 				04C261512B6AD53B00D0E5C7 /* Choose.swift in Sources */,
 				04C2614F2B6AD26E00D0E5C7 /* VaultView.swift in Sources */,
 				04C2615D2B6B195900D0E5C7 /* WifiBar.swift in Sources */,
 				04C261412B6A762400D0E5C7 /* AddressItem.swift in Sources */,
 				46A525C72B6C839100C923E9 /* ServiceStatusView.swift in Sources */,
+				46662D3D2B6E18E5004EF659 /* KeyChainService.swift in Sources */,
 				04C2613B2B6A6D4800D0E5C7 /* PairView.swift in Sources */,
 				04C261452B6AB73700D0E5C7 /* RadioButtonGroup.swift in Sources */,
 				04C2612B2B6A31E700D0E5C7 /* HeaderView.swift in Sources */,
+				46662D412B6E1949004EF659 /* UserDefaultsService.swift in Sources */,
 				04C261672B6B351E00D0E5C7 /* SwapDoneView.swift in Sources */,
 				04C2614D2B6AD18200D0E5C7 /* AssetsView.swift in Sources */,
 				043F229B2B69D73E00E9B2D1 /*  StartVoltixView.swift in Sources */,
@@ -448,6 +463,7 @@
 				04C2612F2B6A3F8A00D0E5C7 /* StartView.swift in Sources */,
 				04C261612B6B1F2F00D0E5C7 /* SendDoneView.swift in Sources */,
 				04C2616B2B6B873300D0E5C7 /* SwapDetailView.swift in Sources */,
+				46662D432B6E1C77004EF659 /* SaveToKeyChainButton.swift in Sources */,
 				04C261692B6B4D6400D0E5C7 /* SwapPairView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
