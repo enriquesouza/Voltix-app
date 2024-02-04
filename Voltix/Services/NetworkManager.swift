@@ -12,7 +12,6 @@ class NetworkManager: NSObject, NetServiceBrowserDelegate, NetServiceDelegate, O
     @Published var netServiceDomain: String = "local."
     @Published var netServicePort: Int32 = 65535
     
-    // Add other NetServiceDelegate methods if necessary
     @Published var discoveredServices: [NetService] = []
     @Published var publishStatus: String = ""
     @Published var isServicePublished: Bool = false
@@ -27,15 +26,14 @@ class NetworkManager: NSObject, NetServiceBrowserDelegate, NetServiceDelegate, O
         self.isBrowsing = true
     }
     
-    // Publish a service, choose a port in the dynamic/private range (49152-65535) to minimize the risk of conflicts
+    // Publish a service
     func publishService() {
-        
-#if os(iOS)
+        #if os(iOS)
         deviceName = UIDevice.current.name
-#endif
-#if os(macOS)
+        #endif
+        #if os(macOS)
         deviceName = Host.current().localizedName ?? "Unknown"
-#endif
+        #endif
         
         netService = NetService(domain: netServiceDomain, type: netServiceType, name: deviceName, port: netServicePort)
         netService?.delegate = self
@@ -48,14 +46,18 @@ class NetworkManager: NSObject, NetServiceBrowserDelegate, NetServiceDelegate, O
     func netServiceBrowser(_ browser: NetServiceBrowser, didFind service: NetService, moreComing: Bool) {
         DispatchQueue.main.async {
             self.discoveredServices.append(service)
+            service.delegate = self
+            service.resolve(withTimeout: 10.0)
+            print("Found service: \(service.name)")
         }
     }
     
     func netServiceBrowser(_ browser: NetServiceBrowser, didNotSearch errorDict: [String : NSNumber]) {
-        // Handle error
+        DispatchQueue.main.async {
+            self.lastError = "Failed to search: \(errorDict)"
+            self.isBrowsing = false
+        }
     }
-    
-    // Add other NetServiceBrowserDelegate methods if necessary
     
     // MARK: - NetServiceDelegate Methods
     func netServiceDidPublish(_ sender: NetService) {
@@ -67,6 +69,20 @@ class NetworkManager: NSObject, NetServiceBrowserDelegate, NetServiceDelegate, O
     }
     
     func netService(_ sender: NetService, didNotPublish errorDict: [String : NSNumber]) {
-        // Publishing failed
+        DispatchQueue.main.async {
+            self.publishStatus = "Failed to Publish: \(errorDict)"
+            self.isServicePublished = false
+            self.lastError = "Failed to publish: \(errorDict)"
+        }
+    }
+    
+    func netServiceDidResolveAddress(_ sender: NetService) {
+        // Once a service is resolved, print its details
+        DispatchQueue.main.async {
+            if let addressData = sender.addresses?.first {
+                let address = String(data: addressData, encoding: .utf8) ?? "unknown"
+                print("Resolved \(sender.name): \(address)")
+            }
+        }
     }
 }
