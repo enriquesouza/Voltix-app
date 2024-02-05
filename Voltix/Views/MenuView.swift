@@ -22,25 +22,9 @@ struct MenuView: View {
                 .font(Font.custom("Menlo", size: 20))
                 .lineSpacing(30)
                 .foregroundColor(.black);
-            HStack() {
-                Text("Main Vault")
-                    .font(Font.custom("Menlo", size: 20).weight(.bold))
-                    .lineSpacing(30)
-                    .foregroundColor(.black);
-                Spacer()
-                Image(systemName: "chevron.right")
-                    .resizable()
-                    .foregroundColor(.black)
-                    .frame(width: 9, height: 15)
-                    .rotationEffect(.degrees(90));
-            }
-            .padding(.leading, 16)
-            .padding(.trailing, 16)
-            .foregroundColor(.clear)
-            .frame(width: .infinity, height: 55)
-            .background(Color(red: 0.92, green: 0.92, blue: 0.93))
-            .cornerRadius(10);
+            DropdownComponent(selectedOption: "Bitcoin")
           }
+          .padding()
           Spacer().frame(height: 30)
           MenuItem(content: "ADD VAULT")
           MenuItem(content: "EXPORT VAULT")
@@ -62,7 +46,7 @@ struct MenuView: View {
             maxWidth: .infinity,
             minHeight: 0,
             maxHeight: .infinity,
-            alignment: .topLeading
+            alignment: .top
         )
     }
 }
